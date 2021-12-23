@@ -5,4 +5,7 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
+    - location: pre_deploy
+      timeout: 300
+      runas: root
   AfterInstall:
